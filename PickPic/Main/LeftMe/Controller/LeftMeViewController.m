@@ -31,19 +31,20 @@
     [self loadTableView];
 }
 -(void)loadTableView{
-    
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, kScreenW, kScreenH)];
+    //表视图
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, kScreenW, kScreenH-64-100)];
     _tableView.backgroundColor = [UIColor clearColor];
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    
+    //表视图的头视图
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 100)];
     
     UIImageView *headImage = [[UIImageView alloc] initWithFrame:CGRectMake(20, 0, 100, 100)];
     headImage.image = [UIImage imageNamed:@"headImage.jpg"];
     headImage.clipsToBounds = YES;
     headImage.layer.cornerRadius = 50;
+    
     UILabel *nickName = [[UILabel alloc] initWithFrame:CGRectMake(130, 20, 200, 30)];
     nickName.text = @"一名孤独的吃货";
     
@@ -56,8 +57,13 @@
     [headerView addSubview:signText];
     
     _tableView.tableHeaderView = headerView;
-    
     [self.view addSubview:_tableView];
+    
+    //注销按钮
+    UIButton *signOut = [[UIButton alloc] initWithFrame:CGRectMake((kScreenW/5*4)/2-20, kScreenH-50, 80, 40)];
+    [signOut setTitle:@"注销" forState:UIControlStateNormal];
+    signOut.backgroundColor = [UIColor redColor];
+    [self.view addSubview:signOut];
 }
 #pragma mark ----- UITableViewDataSource -----
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
