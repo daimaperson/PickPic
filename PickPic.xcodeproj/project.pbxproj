@@ -28,7 +28,6 @@
 		0409AC661CFEC47C00EED0CF /* LeftMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0409AC641CFEC47C00EED0CF /* LeftMeViewController.xib */; };
 		0409AC6A1CFEC49200EED0CF /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409AC681CFEC49200EED0CF /* PostViewController.m */; };
 		0409AC6B1CFEC49200EED0CF /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0409AC691CFEC49200EED0CF /* PostViewController.xib */; };
-		0409AC701CFEC51D00EED0CF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409AC6F1CFEC51D00EED0CF /* BaseViewController.m */; };
 		0409AC731CFEC54D00EED0CF /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409AC721CFEC54D00EED0CF /* BaseNavigationViewController.m */; };
 		0409AC781CFEC7F600EED0CF /* tabBar_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0409AC771CFEC7F600EED0CF /* tabBar_bg.jpg */; };
 		0409AC7A1CFEC7FD00EED0CF /* selected_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0409AC791CFEC7FD00EED0CF /* selected_bg.png */; };
@@ -40,6 +39,7 @@
 		0409ACC71CFF140400EED0CF /* Creative_568px_1141925_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = 0409ACC31CFF140400EED0CF /* Creative_568px_1141925_easyicon.net.png */; };
 		0409ACC81CFF140400EED0CF /* Link_Building_764px_1141913_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = 0409ACC41CFF140400EED0CF /* Link_Building_764px_1141913_easyicon.net.png */; };
 		0409ACC91CFF140400EED0CF /* Location_568px_1141916_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = 0409ACC51CFF140400EED0CF /* Location_568px_1141916_easyicon.net.png */; };
+		04CDDC141CFFC38A0000DF65 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDDC131CFFC38A0000DF65 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,8 +98,6 @@
 		0409AC671CFEC49200EED0CF /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
 		0409AC681CFEC49200EED0CF /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 		0409AC691CFEC49200EED0CF /* PostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
-		0409AC6E1CFEC51D00EED0CF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = ../BaseNavigationController/BaseViewController.h; sourceTree = "<group>"; };
-		0409AC6F1CFEC51D00EED0CF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ../BaseNavigationController/BaseViewController.m; sourceTree = "<group>"; };
 		0409AC711CFEC54D00EED0CF /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
 		0409AC721CFEC54D00EED0CF /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
 		0409AC741CFEC62900EED0CF /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -114,6 +112,8 @@
 		0409ACC31CFF140400EED0CF /* Creative_568px_1141925_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Creative_568px_1141925_easyicon.net.png; sourceTree = "<group>"; };
 		0409ACC41CFF140400EED0CF /* Link_Building_764px_1141913_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Link_Building_764px_1141913_easyicon.net.png; sourceTree = "<group>"; };
 		0409ACC51CFF140400EED0CF /* Location_568px_1141916_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Location_568px_1141916_easyicon.net.png; sourceTree = "<group>"; };
+		04CDDC121CFFC38A0000DF65 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		04CDDC131CFFC38A0000DF65 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,8 +410,8 @@
 		0409AC6D1CFEC50C00EED0CF /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0409AC6E1CFEC51D00EED0CF /* BaseViewController.h */,
-				0409AC6F1CFEC51D00EED0CF /* BaseViewController.m */,
+				04CDDC121CFFC38A0000DF65 /* BaseViewController.h */,
+				04CDDC131CFFC38A0000DF65 /* BaseViewController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -581,6 +581,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0409AC3C1CFEBEC800EED0CF /* MMDrawerVisualState.m in Sources */,
+				04CDDC141CFFC38A0000DF65 /* BaseViewController.m in Sources */,
 				0409AC651CFEC47C00EED0CF /* LeftMeViewController.m in Sources */,
 				0409AC3D1CFEBEC800EED0CF /* MMExampleDrawerVisualStateManager.m in Sources */,
 				0409AC3E1CFEBEC800EED0CF /* UIViewController+MMDrawerController.m in Sources */,
@@ -590,7 +591,6 @@
 				0409AC5A1CFEC43500EED0CF /* MessageViewController.m in Sources */,
 				0409AC6A1CFEC49200EED0CF /* PostViewController.m in Sources */,
 				0409AC731CFEC54D00EED0CF /* BaseNavigationViewController.m in Sources */,
-				0409AC701CFEC51D00EED0CF /* BaseViewController.m in Sources */,
 				0409AC3B1CFEBEC800EED0CF /* MMDrawerController.m in Sources */,
 				0409AC4B1CFEC14C00EED0CF /* CustomTabBarController.m in Sources */,
 				0409ABFD1CFEBBE500EED0CF /* main.m in Sources */,
