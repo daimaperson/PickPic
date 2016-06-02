@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LeftMeViewController.h
 //  PickPic
 //
 //  Created by mac on 16/6/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LeftMeViewController : BaseViewController
 
 @end
-
