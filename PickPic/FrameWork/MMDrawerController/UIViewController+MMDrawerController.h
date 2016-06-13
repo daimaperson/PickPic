@@ -33,7 +33,7 @@
 ///---------------------------------------
 
 /**
- The `MMDrawerController` that the view controller is contained within. If the view controller is not contained within a `MMDrawerController`, this property is nil. Note that if the view controller is contained within a `UINavigationController`, that navigation controller is contained within a `MMDrawerController`, this property will return a refernce to the `MMDrawerController`, despite the fact that it is not the direct parent of the view controller.
+ The `MMDrawerController` that the view controller is contained within. If the view controller is not contained within a `MMDrawerController`, this property is nil. Note that if the view controller is contained within a `UINavigationController`, that navigation controller is contained within a `MMDrawerController`, this property will return a reference to the `MMDrawerController`, despite the fact that it is not the direct parent of the view controller.
  */
 @property(nonatomic, strong, readonly) MMDrawerController *mm_drawerController;
 
